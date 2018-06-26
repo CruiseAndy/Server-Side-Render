@@ -41,5 +41,9 @@
     "webpack-dev-server": "2.8.2",
     "webpack-merge": "4.1.0",
     "webpack-node-externals": "1.6.0"
+  },
+  "devDependencies": {
+    "happypack": "^5.0.0",
+    "webpack-parallel-uglify-plugin": "^1.1.0"
   }
 }

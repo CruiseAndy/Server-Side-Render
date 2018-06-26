@@ -1,3 +1,5 @@
+const ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin');	// 程式碼壓縮
+
 module.exports = {
     // Tell webpack to run babel on every file it runs through
     module: {
@@ -15,5 +17,18 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+	plugins: [
+		new ParallelUglifyPlugin({
+            cacheDir: '.cache/',
+            uglifyJS:{
+                output: {
+                    comments: false
+                },
+                compress: {
+                    warnings: false
+                }
+            }
+		})
+	]
 };
