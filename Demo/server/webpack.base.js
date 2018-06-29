@@ -1,4 +1,6 @@
 const ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin');	// 程式碼壓縮
+const HappyPack = require('happypack');
+const happyThreadPool = HappyPack.ThreadPool({ size: 4 });
 
 module.exports = {
     // Tell webpack to run babel on every file it runs through
