@@ -36,8 +36,12 @@ app.get('*', (req, res) => {
                 });
             }
         });
+    
+    console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>index.js");
+    console.log(promises);
 
     Promise.all(promises).then(() => {
+        console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Promise all");
         const context = {};
         const content = renderer(req, store, context);
 
