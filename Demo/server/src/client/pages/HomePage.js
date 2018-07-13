@@ -6,6 +6,7 @@ const Home = () => {
             <h3>Welcome</h3>
             <p>Check out these awesome fearures</p>
             <iframe src="https://www.npr.org/player/embed/625406645/625406646" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
+            <iframe src="https://www.npr.org/player/embed/625332469/626800565" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
         </div>
     );
 };
