@@ -24,9 +24,6 @@
     3. Blocking Event-loop
     4. 只有 NodeJS 環境可以 SSR
 
-# Q
-* 如果用SSR，React透過Middleware去要求資料，回傳是資料還是頁面
-* use tool?
 
 
 
